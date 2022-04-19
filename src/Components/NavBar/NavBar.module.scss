@@ -1,0 +1,64 @@
+.navBarContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background: white;
+    
+    .Container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            height: 8vh;
+            image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+        }
+        .socials{
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: black;
+                i{
+                    color: black !important;
+                    font-size: 40px;
+                   
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 1000px) {
+    .Container {
+        width: 95% !important;
+        img{
+            height: 5vh !important;
+        }
+        .socials{
+            width: 25% !important;
+            display: flex;
+            // margin-right: 2rem;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: black;
+                i{
+                    color: black !important;
+                    font-size: 25px !important;
+                   
+                }
+            }
+        }
+    }
+    
+}

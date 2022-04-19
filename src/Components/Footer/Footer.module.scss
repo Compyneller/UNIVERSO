@@ -1,0 +1,63 @@
+.FooterContainer{
+    width: 100%;
+    background: white;
+    color: #1F215C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    .Container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .Address{
+                width: 50%;
+                align-items: center;
+                justify-content: center;
+                padding: 0 3rem;
+                img{
+                    height: 8vh;
+                    object-fit: contain;
+                    margin: 1rem 0;
+                }
+            }
+            .email{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 5rem;
+                flex-direction: column;
+                .socials{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        i{
+                            color: black !important;
+                            font-size: 40px;
+                            margin: 0 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .row{
+        flex-direction: column;
+        
+    }
+    
+}

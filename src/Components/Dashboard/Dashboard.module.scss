@@ -1,0 +1,80 @@
+.DashboardContainer{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 90vh;        
+        object-fit: cover;
+        width: 100%;
+        z-index: -1;
+        filter: blur(1px) brightness(.3);
+    }
+    .Container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+
+        h1{
+            font-size: 55px;
+            // font-weight: bold;
+            font-weight:lighter;
+            color: white;
+        }
+    }
+    .mouse{
+        width: 25px ;
+        height: 50px;
+        border: 2px solid white;
+        border-radius: 20px;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 2rem;
+        .mouseWheel{
+            display: block;
+            width: 10px ;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            margin: auto;
+            animation: move-wheel 1s linear infinite;
+            
+          }
+          
+          @keyframes move-wheel {
+            0%{
+                opacity: 0;
+                transform: translateY(-1rem);
+              }
+              100%{
+                  opacity: 1;
+                  transform: translateY(1rem);
+              }
+              
+          }
+      }
+}
+
+@media screen and (max-width : 1000px) {
+    .Container{
+        width: 95% !important;
+        h1{
+            font-size: 25px !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+    }
+    
+}

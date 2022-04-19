@@ -1,0 +1,42 @@
+<div className={style.CreateContainer}>
+      <div className={style.Container}>
+        <div className={style.Row1}>
+          <div className={style.CreateContent}>
+            <h1>Create Greater Impact Through Vernacular & Verticalization</h1>
+            <p>
+              Our comprehensive ability to drive real growth for your marketing
+              needs is anchored in the 2Vs - vernacular and verticalization. We
+              create unique and integrated consumer journeys for marketers to
+              help them get more out of their advertising. Our solutions aim to
+              reach 10Bn connected devices including Smartphones, Connected TV,
+              personal wearables, and smart household appliances.
+            </p>
+          </div>
+        </div>
+        <div className={style.row}>
+          <div className={style.CreateVideo}>
+            <video muted loop autoPlay src={video}></video>
+          </div>
+          <div className={style.TextContent}>
+            <h3>Vernacular</h3>
+            <p>
+              Create hyper-personalised actionable advertising and deliver
+              integrated on-device experiences to consumers in their own
+              languages.
+            </p>
+          </div>
+        </div>
+        <div className={style.row}>
+          <div className={style.TextContent}>
+            <h3>Verticalization</h3>
+            <p>
+              Achieve higher conversions with targeted contextual advertising to
+              drive exceptional ROI through deeper vertical-specific insights.
+            </p>
+          </div>
+          <div className={style.CreateVideo}>
+            <video muted loop autoPlay src={video2}></video>
+          </div>
+        </div>
+      </div>
+    </div>

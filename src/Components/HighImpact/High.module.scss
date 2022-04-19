@@ -1,0 +1,115 @@
+.highContainer{
+    min-height: 50vh;
+    background: #1F215C;
+    color: #F2F4F5;
+    padding: 2rem 0;
+    .Container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+        h1{
+            font-size: 55px;
+        }
+       
+        .row{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem 0;
+            .Cards{
+                width: 30%;
+                min-height: 22vh;
+                overflow :-moz-hidden-unscrollable;
+                background: transparent;
+                position: relative;
+                transition: 250ms ease-out;
+                .CardIcon{
+                    height: 8vh;
+                    position: absolute;
+                    top: 0;
+
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 2;
+
+
+
+                }
+                .CardContent{
+                    width: 100%;
+                    background: #F68C33;
+                    border-radius: 10px;
+                    position: absolute;
+                    color: #1F215C;
+                    top: 3vh;
+                    z-index: 1;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .ContentDiv{
+                        position: absolute;
+                        top: 5vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        
+                        h1{
+                            font-size: 30px;
+                            line-height: 0;
+                            
+                        }
+                        h5{
+                            font-size: 20px;
+                            line-height: 0;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 0;
+                        }
+                    }
+                }
+
+                &:hover{
+                    transition: 250ms ease-in;
+                    transform: translateY(-1rem);
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .row{
+        flex-direction: column;
+        .Cards{
+            width: 100% !important;
+            margin: 2rem 0;
+            .ContentDiv{
+                line-height: 10px !important;
+                background-color: red;
+                h1{
+                
+                    line-height: normal !important;
+                    background: red;
+                }
+                p{
+                    line-height: normal !important;
+                }
+                h5{
+                    line-height: normal !important;
+                }
+            }
+        }
+    }
+    
+}
