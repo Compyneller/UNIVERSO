@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Dashboard.module.scss";
-import video from "../../Assets/5.mp4";
+import video from "../../Assets/Untitled.mp4";
 
 const Dashboard = () => {
   return (
