@@ -31,7 +31,7 @@ const About = () => {
               to uplift their presence in the market.
             </p>
           </div>
-          <div className={style.imageContainer}>
+          <div className={style.ImageContainer}>
             <img src={about} alt="" />
           </div>
         </div>

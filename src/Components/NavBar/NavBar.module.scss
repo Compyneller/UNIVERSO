@@ -22,20 +22,46 @@
   /* Safari seems to support, but seems deprecated and does the same thing as the others. */
   image-rendering: -webkit-optimize-contrast;
         }
-        .socials{
-            width: 15%;
+        .Links{
             display: flex;
-            justify-content: space-between;
-            a{
-                text-decoration: none;
+            width: 50% !important;
+            align-items: center;
+            justify-content: space-evenly;
+      
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 18px;
                 color: black;
+                background: white;
+                padding: .5rem 1rem;
+                border-radius: 10px;
+                transition: 250ms ease-out;
                 i{
                     color: black !important;
-                    font-size: 40px;
+                    transition: 250ms ease-out;
+                    font-size: 30px;
+                    
                    
                 }
-            }
+                &:hover{
+                    transition: 250ms ease-in;
+                    background: black;
+                    color: #F68C33;
+                    border-radius: 10px;
+                    
+                }
+                &:hover i{
+                    transition: 250ms ease-in;
+                    color: #F68C33 !important;
+                }
+            
         }
+        
+    }
+    #hamburger{
+        display: none;
+    }
     }
 }
 @media screen and (max-width : 1000px) {
@@ -44,20 +70,44 @@
         img{
             height: 5vh !important;
         }
-        .socials{
-            width: 25% !important;
-            display: flex;
-            // margin-right: 2rem;
-            justify-content: space-between;
-            a{
-                text-decoration: none;
-                color: black;
-                i{
-                    color: black !important;
-                    font-size: 25px !important;
-                   
+        .Links{
+            display: none !important;
+            .socials{
+                width: 25% !important;
+                display: flex;
+                // margin-right: 2rem;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    i{
+                        color: black !important;
+                        font-size: 25px !important;
+                        
+                    }
                 }
             }
+        }
+        #hamburger{
+            display: block !important;
+            margin-right: 1rem;
+            z-index: 10;
+        }
+        .LinksActive{
+            width: 100% !important;
+            position: absolute;
+            min-height: 90vh;
+            // left: 0;
+            right: 0;
+            scroll-behavior: none;
+            z-index: 10;
+            top: 10vh;
+            background:  #1F215C;
+
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-evenly !important;
+            flex-direction: column !important;
         }
     }
     

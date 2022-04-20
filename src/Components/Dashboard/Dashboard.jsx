@@ -20,7 +20,7 @@ const Dashboard = () => {
       <span
         className={style.mouse}
         onClick={() => {
-          window.scroll(0, 1080);
+          window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
         }}
       >
         <span className={style.mouseWheel}></span>

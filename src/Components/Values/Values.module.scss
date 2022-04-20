@@ -1,0 +1,146 @@
+.CreateContainer{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F68C33;
+    background: #1F215C;
+    padding: 5rem 0;
+    flex-direction: column;
+    
+    
+      h1{
+          color: #F68C33;
+          margin-bottom:5rem;
+      }
+    .Container{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0 auto;
+
+        .Cards{
+            width: 23%;
+            min-height: 50vh;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid #F68C33;
+            padding: 2rem 0;
+            text-align: center;
+            transition: 250ms ease-out;
+            position: relative;
+            
+            .ImageContainer{
+                width: 80%;
+                display: flex;
+                height: 10vh;
+                
+                position: absolute;
+                top:7vh;
+                img{
+                    height: 10vh;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+            .CardContent{
+                position: absolute;
+                top: 20vh;
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3{
+                    font-size: 23px !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+            &:hover{
+                transition: 250ms ease-in;
+                transform: scale(1.05);
+                -webkit-box-shadow: 0px 0px 20px 5px #F68C33;
+-moz-box-shadow: 0px 0px 20px 5px #F68C33;
+box-shadow: 0px 0px 20px 5px #F68C33;
+            }
+        }
+        // .Row1{
+        //     width: 100%;
+        //     align-items: center;
+        //     justify-content: start;
+        //     display: flex;
+        //     .CreateContent{
+        //         width: 50%;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: flex-start;
+        //         flex-direction: column;
+        //         h1{
+        //             font-size: 55px;
+        //         }
+                
+        //     }
+        // }
+            
+        //     .row{  
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     width: 100%;
+        //     .CreateVideo{
+        //         width: 50%;
+        //         align-items: center;
+        //         justify-content: center;
+        //         video{
+        //             width: 100%;
+        //         }
+        //     }
+        //     .TextContent{
+        //         width: 50%;
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         flex-direction: column;
+        //         padding: 0 5rem;
+        //     }
+        // }
+    }
+}
+
+@media screen and (max-width : 1000px) {
+.Container{
+    width: 90% !important;
+    flex-direction: column;
+    .Cards{
+        width: 100%   !important;
+        margin: 2rem 0;
+    }
+    .CreateContent{
+        width: 100% !important;
+        h1{
+            text-align: center;
+        }
+    }
+
+    .row{
+        flex-direction: column  !important;
+        .CreateVideo{
+            width: 100% !important;
+            video{
+                width: 100% !important;
+                object-fit: contain !important;
+            }
+
+        }
+        .TextContent{
+            width: 100% !important ;
+        }
+    }
+}
+}

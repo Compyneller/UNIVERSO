@@ -1,11 +1,12 @@
 .AboutContainer{
-    min-height: 70vh;
-    padding: 5rem 0;
+    min-height: 50vh;
+    // padding: 5rem 0;
     
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 5rem;
 
     .Container{
         width: 80%;
@@ -21,27 +22,30 @@
             height: 100%;
             .content{
                 width: 50%;
-                padding: 1rem 4rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
                 height: 100%;
+                p{
+                    width: 80%;
+                    line-height: 32px ;
+                    font-size: 18px;
+                }
             }
-            .imageContainer{
+            .ImageContainer{
                 width: 50%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                height: 100%;
-                margin-bottom: 1rem;
-                
+max-height: 50vh;          
+      justify-content: center;
                 img{
                     width: 100%;
-                    object-fit: contain;
-                    filter: brightness(.7);
-                    border-radius: 10px;
+                    max-height: 50vh;
                     margin: auto 0;
+                    object-fit: cover;
+                   
+                    border-radius: 10px;
                 }
             }
         }
@@ -51,14 +55,18 @@
 @media screen and (max-width : 1000px) {
     .AboutContainer{
         padding: 1rem 0 !important;
+        margin-bottom: 0rem !important;
         .Container{
             width: 90% !important;
             .row{
                 flex-direction: column;
                 .content{
                     width: 100% !important;
+                    p{
+                        width: 100% !important;
+                    }
             }
-            .imageContainer{
+            .ImageContainer{
                 width: 100% !important;
             }
         }

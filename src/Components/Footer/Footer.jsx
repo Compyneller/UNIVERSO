@@ -24,14 +24,14 @@ const Footer = () => {
               </a>
             </p>
             <div className={style.socials}>
+              <a target="_blank" href=" https://twitter.com/univmagnanimo ">
+                <i className="fa-brands fa-twitter"></i>
+              </a>
+
               <a
                 target="_blank"
                 href="https://universomagnanimounipessoal.medium.com/"
               >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-
-              <a target="_blank" href=" https://twitter.com/univmagnanimo">
                 <i className="fa-brands fa-medium"></i>
               </a>
               <a
@@ -41,6 +41,10 @@ const Footer = () => {
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
+            <p className={style.footerText}>
+              {" "}
+              © Universo Magnanimo, Unipessoal LDA all rights reserved
+            </p>
           </div>
         </div>
       </div>

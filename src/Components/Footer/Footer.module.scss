@@ -1,11 +1,12 @@
 .FooterContainer{
     width: 100%;
-    background: white;
+    background: #ECEFF1;
     color: #1F215C;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
+    min-height: fit-content;
     .Container{
         width: 80%;
         display: flex;
@@ -26,6 +27,10 @@
                     height: 8vh;
                     object-fit: contain;
                     margin: 1rem 0;
+                    image-rendering: auto;
+                    image-rendering: crisp-edges;
+                    image-rendering: pixelated;
+                    image-rendering: -webkit-optimize-contrast;
                 }
             }
             .email{
@@ -55,9 +60,29 @@
 }
 
 @media screen and (max-width : 1000px) {
-    .row{
-        flex-direction: column;
+    .FooterContainer{
+        padding: 0rem 0 !important;
+        min-height: 100vh !important;
+        .row{
+            flex-direction: column;
+            .Address{
+                width: 80% !important;
+                
+            }
+            .email{
+                width: 80% !important;
+                p{
+                    
+                }
+            }
+            .socials{
+            width: 100% !important;
+            margin-left: 0 !important;
+            justify-content: start !important;
+            
+        }
         
     }
     
+}
 }
