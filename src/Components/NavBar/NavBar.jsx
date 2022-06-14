@@ -36,7 +36,7 @@ const NavBar = () => {
           <a
             onClick={() => setToggle(false)}
             target="_blank"
-            href="https://twitter.com/univmagnanimo"
+            href="https://mobile.twitter.com/universomag_"
           >
             <i className="fa-brands fa-twitter"></i>
           </a>

@@ -24,7 +24,7 @@ const Footer = () => {
               </a>
             </p>
             <div className={style.socials}>
-              <a target="_blank" href=" https://twitter.com/univmagnanimo ">
+              <a target="_blank" href="https://mobile.twitter.com/universomag_">
                 <i className="fa-brands fa-twitter"></i>
               </a>
 

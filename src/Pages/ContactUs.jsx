@@ -33,12 +33,15 @@ const ContactUs = () => {
                 <div>
                   <a
                     target="_blank"
-                    href="https://universomagnanimounipessoal.medium.com/"
+                    href="https://mobile.twitter.com/universomag_"
                   >
                     <i className="fa-brands fa-twitter"></i>
                   </a>
 
-                  <a target="_blank" href=" https://twitter.com/univmagnanimo">
+                  <a
+                    target="_blank"
+                    href="https://universomagnanimounipessoal.medium.com/"
+                  >
                     <i className="fa-brands fa-medium"></i>
                   </a>
                   <a
