@@ -1,8 +1,10 @@
 import React from "react";
 import style from "./Footer.module.scss";
 import logo from "../../Assets/oie_hSmUWMk0obba.png";
-
+import { useContext } from "react";
+import { Data } from "../../Context/DataContext";
 const Footer = () => {
+  const { allData } = useContext(Data);
   return (
     <div className={style.FooterContainer}>
       <div className={style.Container}>
@@ -11,9 +13,10 @@ const Footer = () => {
             <img src={logo} alt="" />
             <p>
               {" "}
-              Address: Praceta Sebastião da Gama, nº 3, 3º ESQ, Massamá <br />
-              District: Lisbon <br /> Municipality: Sintra <br /> Parish:
-              Massamá and Monte Abraão 2745 837 Queluz
+              Address: {allData?.data?.footer?.Address} <br />
+              District: {allData?.data?.footer?.District} <br /> Municipality:
+              {allData?.data?.footer?.Municipality} <br /> Parish:{" "}
+              {allData?.data?.footer?.Parish}
             </p>
           </div>
           <div className={style.email}>
@@ -23,27 +26,22 @@ const Footer = () => {
                 hello@universomagnanimo.org
               </a>
             </p>
+
             <div className={style.socials}>
-              <a target="_blank" href="https://mobile.twitter.com/universomag_">
+              <a target="_blank" href={allData?.data?.footer?.twitter}>
                 <i className="fa-brands fa-twitter"></i>
               </a>
 
-              <a
-                target="_blank"
-                href="https://universomagnanimounipessoal.medium.com/"
-              >
+              <a target="_blank" href={allData?.data?.footer?.medium}>
                 <i className="fa-brands fa-medium"></i>
               </a>
-              <a
-                href=" https://www.linkedin.com/company/universo-magnanimo"
-                target="_blank"
-              >
+              <a href={allData?.data?.footer?.linkedin} target="_blank">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
             <p className={style.footerText}>
               {" "}
-              © Universo Magnanimo, Unipessoal LDA all rights reserved
+              {allData?.data?.footer?.copyright}
             </p>
           </div>
         </div>
